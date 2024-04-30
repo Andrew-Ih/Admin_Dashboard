@@ -1,0 +1,76 @@
+body {
+    display: grid;
+    margin: 0;
+    grid-template: max(15vh,130px) max(85vh,735px) / max(20vw,302px) max(80vw,1210px);
+}
+
+/**********************************************************************************************/
+
+.sidebar {
+    background-color: rgb(38, 161, 255);
+    grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    padding: 10px;
+    margin: 0;
+    grid-template:  max(10vh,87px) max(25vh,250px) max(15vh,150px) / 1fr;
+    padding-top: 10%;
+    row-gap: 30px;
+}
+
+.sidebar div {
+    margin: 0;
+    background-color: rgb(38, 161, 255);
+    color: white;
+    font-weight: bold;
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    font-size: 20px;
+}
+
+.svg {
+    height: max(4vh, 35px);
+    width: max(4vw, 60px);
+}
+
+.dashboard-svg { 
+    height: max(6vh, 52px);
+    width: max(6vw, 91px);
+}
+
+.sidebar-contents {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-bar {
+    padding-left: 5%;
+}
+
+.sidebar .menu-bar {
+    padding-left: 10%;
+}
+
+.support-bar {
+    padding-left: 10%;
+}
+
+
+
+
+/**********************************************************************************************/
+
+.header {
+    background-color: white;
+    grid-area: 1 / 2 / 2 / 3;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2; /* Ensure header appears above the main section */
+}
+
+/**********************************************************************************************/
+
+.main {
+    background-color: rgb(220, 217, 217);
+    grid-area: 2 / 2 / 2 / 3;
+    position: relative;
+    z-index: 1; 
+}
