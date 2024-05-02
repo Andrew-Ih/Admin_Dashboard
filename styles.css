@@ -159,4 +159,47 @@ body {
     grid-area: 2 / 2 / 2 / 3;
     position: relative;
     z-index: 1; 
+    display: grid;
+    grid-template: 50% 50% / 70% 30%;
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.projects {
+    background-color: white;
+    grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    grid-template: 10% 90% / 100%;
+}
+
+.your-projects {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+.project-container {
+    display: grid;
+    grid-template: 33.33% 33.33% 33.33% / 50% 50%;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.projects .project{
+    background-color: aqua;
+    height: 170px;
+    width: 350px;
+    border: 5px solid black;
+}
+
+
+
+.announcements {
+    background-color: blue;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending {
+    background-color: greenyellow;
+    grid-area: 2 / 2 / 3 / 3;
 }
