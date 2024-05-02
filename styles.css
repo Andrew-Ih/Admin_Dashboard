@@ -31,6 +31,10 @@ body {
     width: max(4vw, 60px);
 }
 
+.profilepic-svg {
+    height: max(9vh, 80px);
+}
+
 .dashboard-svg { 
     height: max(6vh, 52px);
     width: max(6vw, 91px);
@@ -71,19 +75,8 @@ body {
     position: relative;
     z-index: 2; /* Ensure header appears above the main section */
     display: grid;
-    grid-template: 50% 50% / 60% 40%
-}
-
-.header .search {
-    background-color: white;
-}
-
-.header .profile-info {
-    background-color: blanchedalmond;
-}
-
-.header .user-info {
-    background-color: white;
+    grid-template: 50% 50% / 60% 40%;
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
 .header .buttons {
@@ -123,6 +116,40 @@ body {
     padding-left: 10px;
     font-size: 100%;
 }
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.user-info .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tag {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hi {
+    font-weight: bold;
+}
+
+.profile-info {
+    display: grid;
+    grid-template: 100% / 15% 15% 40%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 
 /**********************************************************************************************/
